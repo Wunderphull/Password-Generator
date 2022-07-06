@@ -7,7 +7,6 @@ const keys = {
   symbol: "!@#$%^&*()_+~\\`|}{[]:;?><,./-="
 };
 
-
 // Array of functions to select a random value from the allowed upperCase, lowerCase, number, and symbol lists.
   const createKey = [
     function upperCase() {
@@ -37,7 +36,7 @@ function passGen() {
   const symbol = document.getElementById("symbol").checked;
   // If one is selected, the anwer will be above zero, and this will be falsy and the alert will not print.
   if (upper + lower + number + symbol === 0) {
-    alert("You really need at leaston one checkbox checked.");
+    alert("You really need at least one checked checkbox.");
     return;
   };
 
